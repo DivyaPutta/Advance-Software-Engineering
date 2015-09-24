@@ -1,0 +1,79 @@
+<html>
+  <head>
+      <style> 
+        
+    h1{color:darkturquoise; }
+  h2{color:green; }
+  
+    </style>
+      
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        
+        
+        
+        google.load('visualization', '1', { 'packages': ['map'] });
+    google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Country', 'QR code Checkers'],
+        ['China', 'China: 1,363,800'],
+        ['India', 'India: 1,242,600'],
+        ['US', 'US: 23,178,420'],
+        ['Indonesia', 'Indonesia: 247,424'],
+        ['Brazil', 'Brazil: 201,032'],
+        ['Pakistan', 'Pakistan: 18,613'],
+        ['Nigeria', 'Nigeria: 173,615'],
+        ['Bangladesh', 'Bangladesh: 152,518'],
+        ['Russia', 'Russia: 1,460,195'],
+        ['Japan', 'Japan: 12,712,000']
+       
+      ]);
+
+    var options = { showTip: true };
+
+    var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+    map.draw(data, options);
+  };
+    
+        
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['usage', '% of users'],
+          ['Transportation',     37],
+          ['Events',      26],
+          ['Restaurants',  18],
+          ['Recreation centers', 11],
+          ['Others',    8]
+        ]);
+
+        var options = {
+          title: 'QR code is used in various ways',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+        
+        
+       </script>
+     
+  </head>
+  <body>
+      <h1>Welcome</h1>
+    <h2><div id="Username"></div></h2><img src ="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" height="75" width="75">
+      <div id="chart_div"></div>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+      
+  </body>
+</html>
+
+
+  <script type="text/javascript">
+    document.getElementById('Username').innerHTML = localStorage.getItem('Username');
+    </script>
