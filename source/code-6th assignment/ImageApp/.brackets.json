@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/_harsha/ImageApp/platforms/android/build/intermediates/assets/debug/www/plugins/cordova-plugin-whitelist/whitelist.js",
+        "C:/Users/_harsha/ImageApp/gulpfile.js"
+    ]
+}
