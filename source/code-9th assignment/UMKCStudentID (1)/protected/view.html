@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>    
+    <script src="js/firebase.js"></script>  
+    <script src="js/angularfire.min.js"></script>
+  </head>
+       <ion-pane>
+           <ion-header-bar class="bar bar-header bar-dark">
+        <h1 class="title">Student Details</h1>
+    </ion-header-bar>
+        <ion-content class="padding">
+            <form>
+           <!-- <div ng-datamodel="username">{{username}}</div>    -->
+    <div class="view-screen-title">UMKC Student ID</div>
+              <div >First Name</div>
+                <input type="text" name="Firstname" ng-datamodel="firstname" placeholder="First Name"/>
+            {{firstname}}
+                <div >Last Name</div>
+                <input type="Text" name="Lastname" ng-datamodel="lastname" placeholder="Last Name"/>
+              {{lastname}}
+                <div >Student ID</div>
+                <input type="Text" name="idnumber" ng-datamodel="username" placeholder="Student ID"/>
+            {{username}}
+                <div >Gender</div>
+                <input type="Text" name="Gender" ng-datamodel="gender" placeholder="Gender"/>
+              {{gender}}
+                <div >Date of Birth</div>
+              
+              <div >Email</div>
+                <input type="Text" name="Email" ng-datamodel="email" placeholder="Email"/>
+              {{email}}
+                <div class="item-title label">Address</div>
+               <input type="Text" name="Address" ng-datamodel="address" placeholder="Address"/>
+                {{address}}
+          
+
+   
+       <div> <!--<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mFmU2b88YT5n-HulS-WxrwebkDJz9gu_oWRfQQhjAj2wYJY3' id="qrimg">-->
+           <img src="https://cdn2.iconfinder.com/data/icons/lil-silhouettes/2176/person5-256.png" id='pic'>
+            </div>
+        
+ 
+ <div class="list-block">
+        <ul>
+          <li><a onclick='window.location.href="index.html"' class="item-link list-button">Logout</a></li>
+        </ul>
+      </div>
+                               </div>
+      </div> 
+    </div>
+</div>        
+                            </form>
+
+        </ion-content>
+          </ion-pane>
+           
+ 
