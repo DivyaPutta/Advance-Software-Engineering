@@ -196,7 +196,7 @@ angular.module('weather', [])
 	var runRequest = function(city) {
 		return $http({
 			method: 'JSONP',
-			url: 'http://api.openweathermap.org/data/2.5/forecast/daily?q='+ city + '&mode=json&units=metric&cnt=1&callback=JSON_CALLBACK'
+			url: 'http://api.openweathermap.org/data/2.5/forecast/daily?q='+ city + '&appid=2de143494c0b295cca9337e1e96b00e0&mode=json&units=metric&cnt=1&callback=JSON_CALLBACK'
 		});
 	};
 	return {
